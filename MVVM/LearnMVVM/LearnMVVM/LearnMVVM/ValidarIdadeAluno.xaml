@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LearnMVVM.ValidarIdadeAluno" Padding="30">
+	<ContentPage.Content>
+		<StackLayout>
+			<Entry Text="{Binding Nome}" BackgroundColor="{Binding Cor}"/>
+			<Entry Text="{Binding Idade}" />
+			<Button IsEnabled="{Binding MaiorIdade}" Text="Entrar" Clicked="Button_Clicked"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
